@@ -1,0 +1,176 @@
+body {
+    margin: 0;
+    font-family: 'Century Gothic';
+    font-size: 18px;
+    /* background-color: #222; */
+    color: #000;
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    color: initial;
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.hor-items {
+    display: flex;
+    flex-direction: row;
+}
+
+.cart {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #777;
+    border-radius: 5px;
+}
+
+.cart-title {
+    font-size: 24px;
+    padding: 0 0 10px;
+}
+
+#cart-price {
+    font-size: 14px;
+    color: #777;
+}
+
+.cart-body {
+    padding: 30px 0 0;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0 10px;
+}
+
+.cart-item-img {
+    object-fit: contain;
+    object-position: center;
+    max-width: 200px;
+    max-height: 150px;
+}
+
+.cart-item-info {
+    display: flex;
+    padding: 0 0 0 10px;
+    width: 40%;
+    flex-direction: column;
+}
+
+.cart-item-name {
+    font-size: 20px;
+    padding: 0 0 10px;
+}
+
+.cart-item-price {
+    font-size: 15px;
+    padding: 15px 20px 0 0;
+    font-weight: 600;
+}
+
+.cart-item-field {
+    font-size: 14px;
+}
+
+.cart-item-field-name {
+    padding: 0 10px 0 0;
+}
+
+.cart-item-props {
+    display: flex;
+    padding: 10px 10px 40px 10px;
+    margin: 0 0 0 20px;
+}
+
+.cart-item-props>* {
+    margin: 0 5px 0 0;
+    transition: 0.3s visibility;
+}
+
+.cart-item-props>*:not(.cart-item-count) {
+    visibility: hidden;
+}
+
+.cart-item-props:hover>* {
+    visibility: visible;
+}
+
+.cart-item-count {
+    max-height: 25px;
+    max-width: 25px;
+    padding: 1px 10px;
+    text-align: center;
+    border-color: #e7e7e7;
+    border-radius: 5px;
+    border-width: 1px;
+    border-style: solid;
+    transition: 0.3s border-color;
+}
+
+.cart-item-count:hover {
+    border-color: #969696;
+}
+
+.cart-item-btn {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: transparent;
+    transition: 0.3s background-color;
+}
+
+.cart-item-btn:hover {
+    background-color: rgba(0,0,0,0.1);
+}
+
+#cartform {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0 0;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px 10px;
+    max-width: 200px;
+}
+
+.input>input,
+.input>textarea {
+    border-color: #777;
+    border-radius: 5px;
+    border-width: 1px;
+    border-style: solid;
+    resize: none;
+    font-size: 16px;
+}
+
+.input-name {
+    text-align: left;
+    padding: 0 0 5px;
+}
+
+#send-btn {
+    background-color: #e7e7e7;
+    transition: 0.3s background-color;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+#send-btn:hover {
+    background-color: #f3f3f3;
+}
