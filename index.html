@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/cart.js"></script>
+    <title>Cart</title>
+</head>
+
+<body>
+    <div class="cart">
+        <div class="cart-title">Корзина</div>
+        <div id="cart-price">3 товара на сумму: 500 руб.</div>
+        <form id="cartform">
+            <div class="input">
+                <div class="input-name">Имя</div>
+                <input>
+            </div>
+            <div class="hor-items">
+                <div class="input">
+                    <div class="input-name">Телефон</div>
+                    <input>
+                </div>
+                <div>или</div>
+                <div class="input">
+                    <div class="input-name">Электронная почта</div>
+                    <input>
+                </div>
+            </div>
+            <div class="input">
+                <div class="input-name">Комментарий</div>
+                <textarea></textarea>
+            </div>
+            <div><a id="send-btn">Отправить</a></div>
+        </form>
+        <div class="cart-body">
+            <div class="cart-item">
+                <div class="hor-items">
+                    <a href="/"><img class="cart-item-img" src="./media/item.jpg"></a>
+                    <div class="cart-item-info">
+                        <a class="cart-item-name" href="/">
+                            Bravus 4000 Compact
+                        </a>
+                        <div class="cart-item-field hor-items">
+                            <div class="cart-item-field-name">Размер:</div>
+                            <div>30x30</div>
+                        </div>
+                        <div class="cart-item-field hor-items">
+                            <div class="cart-item-field-name">Ключей в комплекте:</div>
+                            <div>3 ключа</div>
+                        </div>
+                        <div class="cart-item-field hor-items">
+                            <div class="cart-item-field-name">Модификация:</div>
+                            <div>Ключ-ключ</div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="cart-item-props hor-items">
+                            <div class="cart-item-btn cart-item-diff">-</div>
+                            <input class="cart-item-count" value="1">
+                            <div class="cart-item-btn cart-item-add">+</div>
+                            <div class="cart-item-btn cart-item-add">×</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-item-price">200 руб.</div>
+            </div>
+            <div class="cart-item">
+                <div class="hor-items">
+                    <a href="/"><img class="cart-item-img" src="./media/item2.jpg"></a>
+                    <div class="cart-item-info">
+                        <a class="cart-item-name" href="/">
+                            Bravus 3000 Compact
+                        </a>
+                        <div class="cart-item-field hor-items">
+                            <div class="cart-item-field-name">Размер:</div>
+                            <div>35x40</div>
+                        </div>
+                        <div class="cart-item-field hor-items">
+                            <div class="cart-item-field-name">Ключей в комплекте:</div>
+                            <div>2 ключа</div>
+                        </div>
+                        <div class="cart-item-field hor-items">
+                            <div class="cart-item-field-name">Модификация:</div>
+                            <div>Ключ-ключ</div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="cart-item-props hor-items">
+                            <div class="cart-item-btn cart-item-diff">-</div>
+                            <input class="cart-item-count" value="2">
+                            <div class="cart-item-btn cart-item-add">+</div>
+                            <div class="cart-item-btn cart-item-add">×</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-item-price">300 руб.</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
