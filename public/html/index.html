@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css">
+    <script src="/js/anime"></script>
+    <script src="/js"></script>
+    <title>Cart</title>
+</head>
+
+<body>
+    <div id="cart">
+        <a href="/" id="cartLogo"></a>
+        <div id="cartTitle">Корзина</div>
+        <div id="cartPrice">3 товара на сумму: 500 руб.</div>
+        <form id="cartForm">
+            <div class="input">
+                <div class="input-name">Имя</div>
+                <input>
+            </div>
+            <div class="hor-items">
+                <div class="input">
+                    <div class="input-name">Телефон</div>
+                    <input>
+                </div>
+                <div class="pad-width">или</div>
+                <div class="input">
+                    <div class="input-name">Электронная почта</div>
+                    <input>
+                </div>
+            </div>
+            <div class="input">
+                <div class="input-name">Комментарий</div>
+                <textarea></textarea>
+            </div>
+            <div class="flex"><a id="sendBtn" class="btn">Отправить</a></div>
+        </form>
+        <div>
+            <div class="flex">
+                <div class="btn red-btn">Всё верно</div>
+            </div>
+            <div id="cartBody">
+                <div class="cart-item">
+                    <div class="hor-items cart-item-note">
+                        <div class="hor-items">
+                            <a href="/"><img class="cart-item-img" src="/media/item.jpg"></a>
+                            <div class="cart-item-info">
+                                <a class="cart-item-name" href="/">
+                                    Bravus 4000 Compact
+                                </a>
+                                <div class="cart-item-field hor-items">
+                                    <div class="cart-item-field-name">Размер:</div>
+                                    <div>30x30</div>
+                                </div>
+                                <div class="cart-item-field hor-items">
+                                    <div class="cart-item-field-name">Ключей в комплекте:</div>
+                                    <div>3 ключа</div>
+                                </div>
+                                <div class="cart-item-field hor-items">
+                                    <div class="cart-item-field-name">Модификация:</div>
+                                    <div>Ключ-ключ</div>
+                                </div>
+                            </div>
+                            <div class="cart-item-props hor-items">
+                                <div class="cart-item-btn btn">×</div>
+                                <div class="cart-item-btn btn">-</div>
+                                <input class="cart-item-count" value="1">
+                                <div class="cart-item-btn btn">+</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart-item-price">200 руб.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
